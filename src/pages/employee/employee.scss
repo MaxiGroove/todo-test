@@ -1,0 +1,36 @@
+.user {
+    display: flex;
+    justify-content: space-between;
+
+    &-column:not(:last-child) {
+        border-right: 1px solid #b5b5b5;
+    }
+
+    &-info {
+        width: 300px;
+        margin-right: 20px;
+    }
+
+    &-photo {
+        margin-bottom: 20px;
+        width: 186px;
+        height: 186px;
+        overflow: hidden;
+        border: 2px solid transparent;
+        border-radius: 50%;
+        background-image: conic-gradient(#FF6161, #7B61FF, #FF6161, #7B61FF, #FF6161, #7B61FF, #FF6161);
+
+        &-face {
+            width: 100%;
+            height: auto;
+            min-height: 186px;
+            min-width: 186px;
+            background: #ffffff;
+        }
+    }
+
+    &-tasks.sm {
+        margin-left: 20px;
+        width: 900px;
+    }
+}
